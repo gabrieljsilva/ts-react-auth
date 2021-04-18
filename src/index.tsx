@@ -1,13 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { App } from './config/app/index'
-import { Routes } from './routes/index'
+import { DefaultTemplate } from './templates/index'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App>
-      <Routes />
-    </App>
+    <DefaultTemplate />
   </React.StrictMode>,
   document.getElementById('root'),
 )

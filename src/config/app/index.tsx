@@ -6,13 +6,13 @@ import { AppProps } from './types'
 
 import { store } from '../../store'
 import { GlobalStyle } from '../../config/styles/global'
-import { lightTheme } from '../../config/styles/themes/light'
+import { darkTheme } from '../../config/styles/themes/dark'
 
 export function App({ children }: AppProps) {
   return (
     <div>
       <Provider store={store}>
-        <ThemeProvider theme={lightTheme}>{children}</ThemeProvider>
+        <ThemeProvider theme={darkTheme}>{children}</ThemeProvider>
       </Provider>
       <GlobalStyle />
     </div>
